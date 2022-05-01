@@ -1,0 +1,13 @@
+.footer {
+    padding: 2rem 0 5rem;
+    /* background-color: white; */
+}
+
+.footer .logo {
+    height: 2rem;
+    width: auto;
+}
+.footer__logos {
+    display: flex;
+    justify-content: space-evenly;
+}

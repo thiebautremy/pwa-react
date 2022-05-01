@@ -1,0 +1,40 @@
+.video {
+    padding: 0.5rem 0;
+    width: 80%;
+    margin:0 auto 0.5rem;
+}
+.video .indexHouse {
+    padding: 0.3rem;
+    width: 1.5rem !important;
+    display: inline-block;
+    background-color: white;
+    color: #5D4848;
+    margin-right: 0.5rem;
+    text-align: center;
+    position: relative;
+}
+.video .indexHouse::after {
+    content: '';
+    display: block;
+    width: 1.7rem;
+    height: 0.8rem;
+    background-color: #908180;
+    position: absolute;
+    transform: rotate(40deg);
+    top: -0.4rem;
+    right: -8px;
+}
+.video .indexHouse::before {
+    content: '';
+    display: block;
+    width: 1.6rem;
+    height: 0.8rem;
+    background-color: #908180;
+    position: absolute;
+    transform: rotate(143deg);
+    top: -0.4rem;
+    left: -6px;
+}
+.video h3 {
+    font-size: 1.3rem;
+}

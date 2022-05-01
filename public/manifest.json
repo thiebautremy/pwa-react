@@ -1,0 +1,20 @@
+{
+    "name": "Walk on the Minett Trail",
+	"short_name": "Minett Trail",
+    "icons": [
+        {
+            "src": "/images/icon-256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        },
+        {
+            "src": "/images/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#000",
+	"theme_color": "#908180"
+}
