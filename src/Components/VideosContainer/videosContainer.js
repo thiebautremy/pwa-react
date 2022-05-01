@@ -3,6 +3,7 @@ import "./videosContainer.css";
 import Video from "../Video/video";
 import E22 from "../../assets/logos/E22.png";
 import first from "../../assets/videos/1.mp4";
+import second from "../../assets/videos/2.mp4";
 import Divider from "../Divider/divider";
 const VideosContainer = () => {
   return (
@@ -17,7 +18,7 @@ const VideosContainer = () => {
         index={2}
         title={"Wagon Fond-de-Gras - Fond-de-Gras"}
         poster={E22}
-        source={"https://media.w3.org/2010/05/sintel/trailer_hd.mp4"}
+        source={second}
       />
       <Video
         index={3}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather App</title>
+        <title>Walk on the Minett Trail</title>
         <style type="text/css">
             html {
                 height: 100%;
@@ -11,14 +11,14 @@
             body {
                 height: 100%;
                 margin: 0;
-                background: #0a1f44;
+                background: #000;
                 display: flex;
                 align-items: center;
                 text-align: center;
                 justify-content: center;
             }
         
-            .city {
+            .offline {
                 align-items: center;
                 width: 80%;
                 display: flex;
@@ -26,19 +26,14 @@
                 flex-direction: column;
                 padding: 40px 8%;
                 border-radius: 20px;
-                background: #fff;
-            }
-
-            .city-name {
-                font-size: 2em;
+                background: #908180;
+                color: white;
             }
         </style>
     </head>
     <body>
-        <div class="city">
-            <h2 class="city-name">
-                <span>Please go online to check the current weather.</span>
-            </h2>
+        <div class="offline">
+                <p>Please go online to view videos.</p>
         </div>
     </body>
 </html>
