@@ -4,7 +4,7 @@ import Divider from "../Divider/divider";
 import logo_minettTrail from "../../assets/logos/MinettTrail.png";
 import logo_oai from "../../assets/logos/oai.png";
 import logo_prosud from "../../assets/logos/ProSud.png";
-import Video from "../Video/video";
+// import Video from "../Video/video";
 import ReactPlayer from "react-player";
 
 const Header = () => {
