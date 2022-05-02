@@ -23,19 +23,19 @@ const VideosContainer = () => {
         index={1}
         title={"Lénger Schoul - Linger"}
         poster={poster1}
-        source={first}
+        source={"file:///storage/emulated/0/Movies/1.mp4"}
       />
       <Video
         index={2}
         title={"Wagon Fond-de-Gras - Fond-de-Gras"}
         poster={poster2}
-        source={second}
+        source={"file://storage/emulated/0/Movies/1.mp4"}
       />
       <Video
         index={3}
         title={"La Sauvage - Lasauvage"}
         poster={poster3}
-        source={"https://media.w3.org/2010/05/sintel/trailer_hd.mp4"}
+        source={"file:/storage/emulated/0/Movies/1.mp4"}
       />
       <Video
         index={4}
