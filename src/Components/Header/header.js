@@ -68,6 +68,12 @@ const Header = () => {
         height="100%"
         controls={true}
       />
+      <ReactPlayer
+        url={"/storage/emulated/0/Movies/1.mp4"}
+        width="100%"
+        height="100%"
+        controls={true}
+      />
       {videoFilePath !== null && (
         <div>
           {videoFilePath}
