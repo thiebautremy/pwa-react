@@ -74,11 +74,6 @@ const Header = () => {
         height="100%"
         controls={true}
       />
-      {localStorage}
-      {window}
-      <button onClick={window.showOpenFilePicker()}>
-        Ouvrir local storage
-      </button>
       {videoFilePath !== null && (
         <div>
           {videoFilePath}
