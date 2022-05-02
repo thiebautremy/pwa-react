@@ -50,6 +50,24 @@ const Header = () => {
         on
         onChange={handleVideoUpload}
       />
+      <ReactPlayer
+        url={"file:///storage/emulated/0/Movies/1.mp4"}
+        width="100%"
+        height="100%"
+        controls={true}
+      />
+      <ReactPlayer
+        url={"file://storage/emulated/0/Movies/1.mp4"}
+        width="100%"
+        height="100%"
+        controls={true}
+      />
+      <ReactPlayer
+        url={"file:/storage/emulated/0/Movies/1.mp4"}
+        width="100%"
+        height="100%"
+        controls={true}
+      />
       {videoFilePath !== null && (
         <div>
           {videoFilePath}
