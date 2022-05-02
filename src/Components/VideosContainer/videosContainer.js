@@ -18,12 +18,24 @@ import ReactPlayer from "react-player";
 // import second from "../../assets/videos/2.mp4";
 import Divider from "../Divider/divider";
 const VideosContainer = () => {
-  const [videoFilePath, setVideoFilePath] = useState(null);
+  const [videoFilePathFirst, setVideoFilePathFirst] = useState(null);
+  const [videoFilePathSecond, setVideoFilePathSecond] = useState(null);
+  const [videoFilePathThird, setVideoFilePathThird] = useState(null);
+  // const [videoFilePathFourth, setVideoFilePathFourth] = useState(null);
+  // const [videoFilePathFifth, setVideoFilePathFifth] = useState(null);
+  // const [videoFilePathSixth, setVideoFilePathSixth] = useState(null);
 
   const handleVideoUpload = (event) => {
     console.log(event.target.files[0]);
-
-    setVideoFilePath(URL.createObjectURL(event.target.files[0]));
+    if (event.target.files[0].name === "1.mp4") {
+      setVideoFilePathFirst(URL.createObjectURL(event.target.files[0]));
+    }
+    if (event.target.files[0].name === "2.mp4") {
+      setVideoFilePathSecond(URL.createObjectURL(event.target.files[0]));
+    }
+    if (event.target.files[0].name === "3.mp4") {
+      setVideoFilePathThird(URL.createObjectURL(event.target.files[0]));
+    }
   };
   return (
     <main className="videosContainer">
@@ -40,17 +52,36 @@ const VideosContainer = () => {
           onChange={handleVideoUpload}
         />
       </div>
-      <div className="videosContainer__video">
-        {videoFilePath !== null && (
+      {videoFilePathFirst !== null && (
+        <div className="videosContainer__video">
           <ReactPlayer
-            url={videoFilePath}
+            url={videoFilePathFirst}
             width="100%"
             height="100%"
             controls={true}
           />
-        )}
-      </div>
-      {videoFilePath !== null && <p>{videoFilePath}</p>}
+        </div>
+      )}
+      {videoFilePathSecond !== null && (
+        <div className="videosContainer__video">
+          <ReactPlayer
+            url={videoFilePathSecond}
+            width="100%"
+            height="100%"
+            controls={true}
+          />
+        </div>
+      )}
+      {videoFilePathThird !== null && (
+        <div className="videosContainer__video">
+          <ReactPlayer
+            url={videoFilePathThird}
+            width="100%"
+            height="100%"
+            controls={true}
+          />
+        </div>
+      )}
       {/* <Video
         index={1}
         title={"Lénger Schoul - Linger"}
