@@ -1,14 +1,5 @@
 const CACHE_NAME = "version-1";
-const urlsToCache = [
-  "/",
-  "index.html",
-  "manifest.json",
-  "../src",
-  "../src/assets/videos",
-  "../src/assets/posters",
-  "../src/assets/fonts",
-  "../src/assets/logos",
-];
+const urlsToCache = ["/", "index.html", "manifest.json"];
 
 const self = this;
 
