@@ -13,8 +13,8 @@ import poster9 from "../../assets/posters/9.png";
 import poster10 from "../../assets/posters/10.png";
 import poster11 from "../../assets/posters/11.png";
 import poster12 from "../../assets/posters/12.png";
-import first from "../../assets/videos/1.mp4";
-import second from "../../assets/videos/2.mp4";
+// import first from "../../assets/videos/1.mp4";
+// import second from "../../assets/videos/2.mp4";
 import Divider from "../Divider/divider";
 const VideosContainer = () => {
   return (
