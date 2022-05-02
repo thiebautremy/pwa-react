@@ -27,20 +27,30 @@ const VideosContainer = () => {
   };
   return (
     <main className="videosContainer">
-      <input
-        className="butOpenFile"
-        type="file"
-        accept="video/*"
-        onCanPlay={(e) => console.log(e)}
-        on
-        onChange={handleVideoUpload}
-      />
-      <ReactPlayer
-        url={videoFilePath}
-        width="100%"
-        height="100%"
-        controls={true}
-      />
+      <Divider />
+      <div className="videosContainer__input">
+        <label for="file" class="label-file">
+          Choisir une vidéo
+        </label>
+        <input
+          id="file"
+          className="butOpenFile"
+          type="file"
+          accept="video/*"
+          onChange={handleVideoUpload}
+        />
+      </div>
+      <div className="videosContainer__video">
+        {videoFilePath !== null && (
+          <ReactPlayer
+            url={videoFilePath}
+            width="100%"
+            height="100%"
+            controls={true}
+          />
+        )}
+      </div>
+      {videoFilePath !== null && <p>{videoFilePath}</p>}
       {/* <Video
         index={1}
         title={"Lénger Schoul - Linger"}
@@ -113,7 +123,6 @@ const VideosContainer = () => {
         poster={poster12}
         source={"https://media.w3.org/2010/05/sintel/trailer_hd.mp4"}
       /> */}
-      <Divider />
     </main>
   );
 };

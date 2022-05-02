@@ -3,10 +3,12 @@ import "./footer.css";
 import logo_visitMinett from "../../assets/logos/VisitMinett.png";
 import logo_MUB from "../../assets/logos/MUB.png";
 import E22 from "../../assets/logos/E22.png";
+import Divider from "../Divider/divider";
 
 const Footer = () => {
   return (
     <footer className="footer">
+      <Divider />
       <div className="header__logos">
         <img
           className="logo logo_visitMinett"

@@ -4,8 +4,6 @@ import Divider from "../Divider/divider";
 import logo_minettTrail from "../../assets/logos/MinettTrail.png";
 import logo_oai from "../../assets/logos/oai.png";
 import logo_prosud from "../../assets/logos/ProSud.png";
-// import Video from "../Video/video";
-// import ReactPlayer from "react-player";
 
 const Header = () => {
   return (
@@ -33,47 +31,6 @@ const Header = () => {
           title="Logo ProSud"
         />
       </div>
-      {/* <input
-        className="butOpenFile"
-        type="file"
-        accept="video/*"
-        onCanPlay={(e) => console.log(e)}
-        on
-        onChange={handleVideoUpload}
-      />
-      <ReactPlayer
-        url={"file:///storage/emulated/0/Movies/1.mp4"}
-        width="100%"
-        height="100%"
-        controls={true}
-      />
-      <ReactPlayer
-        url={"file://storage/emulated/0/Movies/1.mp4"}
-        width="100%"
-        height="100%"
-        controls={true}
-      />
-      <ReactPlayer
-        url={"file:/storage/emulated/0/Movies/1.mp4"}
-        width="100%"
-        height="100%"
-        controls={true}
-      />
-      <ReactPlayer
-        url={"/storage/emulated/0/Movies/1.mp4"}
-        width="100%"
-        height="100%"
-        controls={true}
-      />
-      {videoFilePath !== null && (
-          <ReactPlayer
-            url={videoFilePath}
-            width="100%"
-            height="100%"
-            controls={true}
-          />
-      )} */}
-      {/* <Video index={8} title={"Test"} poster={""} source={{ uri: videoSrc }} /> */}
     </header>
   );
 };

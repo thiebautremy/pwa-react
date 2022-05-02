@@ -1,3 +1,30 @@
 .videosContainer {
     padding: 0.5rem;
 }
+
+.videosContainer__input {
+    display: flex;
+    justify-content: center;
+}
+.videosContainer__input .label-file {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    background-color: #908180;
+    border-radius: 0.5rem;
+    border: 0.15rem solid white;
+    padding: 0.3rem 3rem;
+    text-align: center;
+    margin: 2rem 0 0;
+}
+.videosContainer__input .label-file:hover {
+    color: white;
+}
+
+.videosContainer .butOpenFile {
+    display: none;
+}
+
+.videosContainer__video {
+    margin: 2rem auto;
+}
