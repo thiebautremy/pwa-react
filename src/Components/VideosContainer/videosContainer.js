@@ -1,25 +1,47 @@
-import React from "react";
+import React, { useState } from "react";
 import "./videosContainer.css";
-import Video from "../Video/video";
-import poster1 from "../../assets/posters/1.png";
-import poster2 from "../../assets/posters/2.png";
-import poster3 from "../../assets/posters/3.png";
-import poster4 from "../../assets/posters/4.png";
-import poster5 from "../../assets/posters/5.png";
-import poster6 from "../../assets/posters/6.png";
-import poster7 from "../../assets/posters/7.png";
-import poster8 from "../../assets/posters/8.png";
-import poster9 from "../../assets/posters/9.png";
-import poster10 from "../../assets/posters/10.png";
-import poster11 from "../../assets/posters/11.png";
-import poster12 from "../../assets/posters/12.png";
+// import Video from "../Video/video";
+// import poster1 from "../../assets/posters/1.png";
+// import poster2 from "../../assets/posters/2.png";
+// import poster3 from "../../assets/posters/3.png";
+// import poster4 from "../../assets/posters/4.png";
+// import poster5 from "../../assets/posters/5.png";
+// import poster6 from "../../assets/posters/6.png";
+// import poster7 from "../../assets/posters/7.png";
+// import poster8 from "../../assets/posters/8.png";
+// import poster9 from "../../assets/posters/9.png";
+// import poster10 from "../../assets/posters/10.png";
+// import poster11 from "../../assets/posters/11.png";
+// import poster12 from "../../assets/posters/12.png";
+import ReactPlayer from "react-player";
 // import first from "../../assets/videos/1.mp4";
 // import second from "../../assets/videos/2.mp4";
 import Divider from "../Divider/divider";
 const VideosContainer = () => {
+  const [videoFilePath, setVideoFilePath] = useState(null);
+
+  const handleVideoUpload = (event) => {
+    console.log(event.target.files[0]);
+
+    setVideoFilePath(URL.createObjectURL(event.target.files[0]));
+  };
   return (
     <main className="videosContainer">
-      <Video
+      <input
+        className="butOpenFile"
+        type="file"
+        accept="video/*"
+        onCanPlay={(e) => console.log(e)}
+        on
+        onChange={handleVideoUpload}
+      />
+      <ReactPlayer
+        url={videoFilePath}
+        width="100%"
+        height="100%"
+        controls={true}
+      />
+      {/* <Video
         index={1}
         title={"Lénger Schoul - Linger"}
         poster={poster1}
@@ -90,7 +112,7 @@ const VideosContainer = () => {
         title={"Interviews des porteurs du projet"}
         poster={poster12}
         source={"https://media.w3.org/2010/05/sintel/trailer_hd.mp4"}
-      />
+      /> */}
       <Divider />
     </main>
   );
