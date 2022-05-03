@@ -1,3 +1,25 @@
 .App {
     margin: 0 auto;
 }
+
+.App .navigation{
+    width: 100%;
+    border-bottom: 0.3rem solid white;
+}
+.App nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 2rem auto 0;
+}
+
+.App nav .buttons {
+    width: 48%;
+    padding: 0.5rem;
+    border-top-left-radius: 1rem 2rem;
+    border-top-right-radius: 1rem 2rem;
+    border: none;
+    color: #908180;
+    font-weight: bold;
+    text-transform: uppercase;
+}

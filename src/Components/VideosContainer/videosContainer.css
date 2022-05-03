@@ -15,7 +15,7 @@
     border: 0.15rem solid white;
     padding: 0.3rem 3rem;
     text-align: center;
-    margin: 2rem 0 0;
+    margin: 0.5rem 0 0;
 }
 .videosContainer__input .label-file:hover {
     color: white;
@@ -26,5 +26,10 @@
 }
 
 .videosContainer__video {
-    margin: 2rem auto;
+    margin: 1rem auto;
+}
+
+.videosContainer .videosInfos {
+    font-size: 0.8rem;
+    text-align: center;
 }

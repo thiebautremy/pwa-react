@@ -1,0 +1,25 @@
+.details {
+    text-align: center;
+    padding: 0 0 8rem;
+    transition: opacity 3s;
+    opacity: 1;
+      
+}
+.details img {
+    width: 95%;
+    height: auto;
+    margin: 2rem auto;
+}
+
+.details article {
+    display: flex;
+    justify-content: space-between;
+}
+
+.details .detailLux,
+.details .detailFrench,
+.details .detailEnglish {
+    text-justify: auto;
+    text-align: left;
+    padding: 0 0.5rem;
+}
