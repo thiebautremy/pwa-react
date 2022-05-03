@@ -27,6 +27,8 @@
 
 .videosContainer__video {
     margin: 1rem auto;
+    display: flex;
+    justify-content: center;
 }
 
 .videosContainer .videosInfos {

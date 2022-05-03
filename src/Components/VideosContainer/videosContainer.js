@@ -36,8 +36,8 @@ const VideosContainer = () => {
             <div className="videosContainer__video">
               <ReactPlayer
                 url={videoFilePath}
-                width="100%"
-                height="100%"
+                width="auto"
+                height="20rem"
                 controls={true}
               />
             </div>
