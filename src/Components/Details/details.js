@@ -1,7 +1,7 @@
 import React from "react";
 import "./details.css";
 import Fade from "react-reveal/Fade";
-import trailPath from "../../assets/posters/trailPath.png";
+import trailPath from "../../assets/posters/trailPath.webp";
 
 const Details = () => {
   return (
