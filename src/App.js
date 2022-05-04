@@ -18,12 +18,12 @@ function App() {
             style={
               ongletView === "videosView"
                 ? {
-                    backgroundColor: "#433c3b",
-                    color: "#FFF",
-                  }
-                : {
                     backgroundColor: "#FFF",
                     color: "#433c3b",
+                  }
+                : {
+                    backgroundColor: "#433c3b",
+                    color: "#FFF",
                   }
             }
           >
@@ -35,12 +35,12 @@ function App() {
             style={
               ongletView === "detailView"
                 ? {
-                    backgroundColor: "#433c3b",
-                    color: "#FFF",
-                  }
-                : {
                     backgroundColor: "#FFF",
                     color: "#433c3b",
+                  }
+                : {
+                    backgroundColor: "#433c3b",
+                    color: "#FFF",
                   }
             }
           >

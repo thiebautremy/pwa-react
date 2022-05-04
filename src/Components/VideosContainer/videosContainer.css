@@ -10,10 +10,10 @@
     cursor: pointer;
     color: white;
     font-weight: bold;
-    background-color: #908180;
+    background-color: #433c3b;
     border-radius: 0.5rem;
-    border: 0.15rem solid white;
-    padding: 0.3rem 3rem;
+    border: 0.1rem solid white;
+    padding: 0.4rem 5rem;
     text-align: center;
     margin: 0.5rem 0 0;
 }
@@ -32,6 +32,6 @@
 }
 
 .videosContainer .videosInfos {
-    font-size: 0.8rem;
+    font-size: 1rem;
     text-align: center;
 }

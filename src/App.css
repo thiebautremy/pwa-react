@@ -18,7 +18,7 @@
     padding: 0.5rem;
     border-top-left-radius: 1rem 2rem;
     border-top-right-radius: 1rem 2rem;
-    border: none;
+    border: 0.1rem solid white;
     color: #908180;
     font-weight: bold;
     text-transform: uppercase;
