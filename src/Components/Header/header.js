@@ -19,16 +19,16 @@ const Header = () => {
           title="Logo Minett Trail"
         />
         <img
-          className="logo logo_oai"
-          alt="Logo OAI"
-          src={logo_oai}
-          title="Logo OAI"
-        />
-        <img
           className="logo logo_proSud"
           alt="Logo ProSud"
           src={logo_prosud}
           title="Logo ProSud"
+        />
+        <img
+          className="logo logo_oai"
+          alt="Logo OAI"
+          src={logo_oai}
+          title="Logo OAI"
         />
       </div>
     </header>

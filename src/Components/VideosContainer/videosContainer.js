@@ -13,12 +13,16 @@ const VideosContainer = () => {
       <Fade bottom>
         <>
           <p className="videosInfos">
-            Choisissez le numéro de vidéos correspondant au numéro du site que
-            vous souhaitez voir.
+            Choisissez le numéro de la vidéo correspondant au numéro sur le plan
+            du Minett Trail du « Kabaisercher » que vous souhaitez voir, ou
+            encore les interviews des porteurs du projet et le point de vue de
+            l’OAI sur le contexte du projet.
           </p>
           <p className="videosInfos">
-            Choose the video number corresponding to the number of the site you
-            want to see.
+            Choose the video number corresponding to the number on the map of
+            the Minett Trail of the « Kabaisercher » you want to see, or
+            interviews of the project partners and the point of view of the OAI
+            on the context of the project.
           </p>
           <div className="videosContainer__input">
             <label htmlFor="file" className="label-file">

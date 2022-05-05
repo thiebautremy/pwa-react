@@ -44,7 +44,7 @@ function App() {
                   }
             }
           >
-            Détails
+            Plan du Minett Trail
           </button>
         </nav>
       </div>
